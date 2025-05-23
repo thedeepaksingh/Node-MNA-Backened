@@ -1,0 +1,26 @@
+name: Deploy AdminAnalytics Service
+
+on:
+  push:
+    branches:
+      - main  # or the branch you're using
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: |
+          cd AdminAnalytics-Service
+          npm install
+
+      # Add more steps here if needed, like build, test, or deploy
