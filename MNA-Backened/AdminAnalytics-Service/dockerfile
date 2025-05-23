@@ -1,0 +1,17 @@
+# Use Node.js v22 base image
+FROM node:22
+
+# Set working directory to where your main server code lives
+WORKDIR /app
+
+# Copy all project files into the image
+COPY . .
+
+# Install dependencies
+RUN npm install
+
+# Expose the port your service uses
+EXPOSE 9001
+
+# Command to run your app (adjust path if needed)
+CMD ["node", "admin-server.js"]
