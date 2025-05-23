@@ -4,8 +4,8 @@
   "description": "",
   "main": "contacts-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node contacts-server.js"
+   
+    "start": "node contacts-server.js"
   },
   "keywords": [],
   "author": "",

@@ -4,8 +4,8 @@
   "description": "",
   "main": "messagehistory-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node messagehistory-server.js"
+    
+    "start": "node messagehistory-server.js"
   },
   "keywords": [],
   "author": "",

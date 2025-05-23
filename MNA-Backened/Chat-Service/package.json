@@ -4,8 +4,8 @@
   "description": "",
   "main": "chat-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node chat-server.js"
+   
+    "start": "node chat-server.js"
   },
   "keywords": [],
   "author": "",

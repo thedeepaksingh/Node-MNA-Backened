@@ -4,8 +4,8 @@
   "description": "",
   "main": "meetingcalendar-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node meetingcalendar-server.js"
+    
+    "start": "node meetingcalendar-server.js"
   },
   "keywords": [],
   "author": "",

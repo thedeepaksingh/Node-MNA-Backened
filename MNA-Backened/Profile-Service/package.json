@@ -4,8 +4,8 @@
   "description": "",
   "main": "profile-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node profile-server.js"
+   
+    "start": "node profile-server.js"
   },
   "keywords": [],
   "author": "",

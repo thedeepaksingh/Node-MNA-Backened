@@ -4,8 +4,7 @@
   "description": "",
   "main": "teamschannel-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node teamschannel-server.js"
+    "start": "node teamschannel-server.js"
   },
   "keywords": [],
   "author": "",

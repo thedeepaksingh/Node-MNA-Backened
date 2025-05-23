@@ -4,8 +4,8 @@
   "description": "",
   "main": "auth-server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node auth-server.js"
+    
+    "start": "node auth-server.js"
   },
   "keywords": [],
   "author": "",
