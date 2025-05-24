@@ -15,6 +15,8 @@ try {
     res.status(200).json({
       message: "Admin Analytics Service!",
       statusMessage: "Authorized ",
+      port: `${process.env.PORT}`,
+      Environment: `${process.env.NODE_ENV}`,
     });
   });
 
