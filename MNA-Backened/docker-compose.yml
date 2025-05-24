@@ -3,7 +3,7 @@ version: "3.8"
 services:
   adminanalytics-service:
     build:
-      context: ./AdminAnalytics-Service
+      context: AdminAnalytics-Service
       dockerfile: Dockerfile
     ports:
       - "9001:9001"
