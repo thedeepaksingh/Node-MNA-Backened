@@ -11,7 +11,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: AdminAnalytics-Service
+        working-directory: ./AdminAnalytics-Service
 
     steps:
       - name: Checkout code
@@ -20,9 +20,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '22'
+          node-version: "22"
 
       - name: Install dependencies
         run: npm install
 
-      # You can add a Docker build or other steps here if needed
+      # Optional: list files to debug
+      - name: List files
+        run: ls -la
