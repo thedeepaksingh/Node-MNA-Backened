@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 dotenv.config();
 try {
-  const appPort = process.env.APPPORT || 9001;
+  const appPort = process.env.PORT || 9001;
   const app = express();
 
   app.use(cors());
@@ -17,6 +17,10 @@ try {
       statusMessage: "Authorized ",
     });
   });
+
+  console.log("Starting Admin Analytics Service...");
+  console.log(`Environment: ${process.env.NODE_ENV}`);
+  console.log(`PORT (from env): ${process.env.PORT}`);
 
   app.listen(appPort, (err) => {
     if (err) {
