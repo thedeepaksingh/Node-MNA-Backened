@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
+import indexRouter from "./src/routes/index-router.js";
 import dotenv from "dotenv";
 dotenv.config();
 try {
@@ -17,6 +18,8 @@ try {
       statusMessage: "Authorized ",
     });
   });
+
+  app.use("/api", indexRouter);
 
   app.listen(appPort, (err) => {
     if (err) {
